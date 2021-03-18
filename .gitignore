@@ -1,0 +1,29 @@
+# Copyright 2021 Adam Chalkley
+#
+# https://github.com/atc0005/query-meta
+#
+# Licensed under the MIT License. See LICENSE file in the project root for
+# full license information.
+
+# Ignore local editor settings
+/.vscode
+
+# Local test files, scratch notes and other temporary/local files
+/scratch
+
+# Binary names, old and new
+/query-meta
+/qm
+/*.exe
+/qm.amd64
+/qm.i386
+
+# Binaries and related
+/release_assets
+
+# Local copy of configuration file
+/config.toml
+
+# Generated output files
+/meta-load.txt
+/view_extract.txt

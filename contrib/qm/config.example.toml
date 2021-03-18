@@ -1,0 +1,109 @@
+# Copyright 2021 Adam Chalkley
+#
+# https://github.com/atc0005/query-meta
+#
+# Licensed under the MIT License. See LICENSE file in the project root for
+# full license information.
+
+# The database server hosting the database used by this application. If using
+# encryption, this value should match one of the Subject Alternate Name (SANs)
+# values listed on the certificate.
+host = "mssql52.example.com"
+
+# The TCP port used to connect to the database server. If not specified, the
+# default port will be used.
+port = 1433
+
+# The database server instance name. This may be blank.
+instance = "mssql07"
+
+# The username used to connect to the database server. An account with
+# read-only access to the database table is sufficient.
+username = "chocotaco"
+
+# The plaintext password used to connect to the database server. An account
+# with read-only access to the database table is sufficient.
+password = "dbPasW0rdZ"
+
+# Whether data sent between client and server is encrypted. true for yes,
+# false for login packet only and disable for no encryption. This is a string
+# value and should be quoted.
+encrypt_mode = "true"
+
+# Whether the certificate should be trusted as-is without validation. WARNING:
+# TLS is susceptible to man-in-the-middle attacks if enabling this option.
+trust_cert = false
+
+# The name of the database which holds patron records.
+database_name = "Meta"
+
+# The name of the database table or view. Used primarily in logging output,
+# but also for a few other use cases.
+database_table_name = "library_patrons"
+
+# Query used to obtain a count of all patron records.
+query_row_count_all_records = "SELECT COUNT(*) FROM library_patrons"
+
+# Query used to obtain a count of all inactive patron records.
+query_row_count_inactive_records = "SELECT COUNT(*) FROM library_patrons WHERE Gid_status != 'I'"
+
+# Query used to obtain all active patron records (by intentionally excluding
+# inactive records).
+query_active_patron_records = """
+SELECT
+    Gid_status,
+    Gid,
+    Idnum,
+    spriden_id,
+    ssn,
+    givenName,
+    name_middle,
+    sn,
+    Libissuenum,
+    empstu_flag,
+    student_status,
+    banner_last_term_enrolled,
+    Student_currently_enrolled,
+    Student_level_code,
+    employeestatus,
+    employeetype,
+    sal_table,
+    emp_group_code,
+    tes_flag,
+    campus_code,
+    Employee_term_date,
+    ou,
+    title,
+    l,
+    address_dept_city,
+    address_dept_state,
+    address_dept_zip,
+    telephoneNumber,
+    Address_student_perm_street street1,
+    Address_student_perm_street2 street2,
+    Address_student_perm_street3 street3,
+    Address_student_perm_city,
+    Address_student_perm_state,
+    Address_student_perm_zip,
+    Address_nation_code,
+    Phone_student_perm,
+    student_type,
+    Other_status,
+    Other_type_code,
+    Student_degree_earned
+FROM
+    library_patrons
+WHERE
+    Gid_status != 'I';
+"""
+
+# https://github.com/rs/zerolog#leveled-logging
+#
+# `panic` is used to trigger the panic() function with a given message.
+# `fatal` is used for errors that should definitely be noted.
+# `error` is for errors that should definitely be noted.
+# `warn` is for non-critical entries that deserve eyes.
+# `info` is for general application operational entries.
+# `debug` is for debug-level messages and is usually enabled when debugging.
+# `trace` is for very fine-grained messages, more verbose than debug level.
+log_level = "info"
