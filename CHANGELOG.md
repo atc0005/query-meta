@@ -32,7 +32,13 @@ The following types of changes will be recorded in this file:
 
 Initial release!
 
-This release provides an early version of a ...
+This release provides an early version of a prototype tool intended to replace
+the existing `query_meta.php` script used to retrieve patron records from Meta
+and write out a pipe-delimited CSV file for further processing.
+
+Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
+supported at this time. Go 1.15 should be used instead until upstream
+[GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
 [Unreleased]: https://github.com/atc0005/query-meta/compare/v0.1.0...HEAD
 [v0.1.0]: https://github.com/atc0005/query-meta/releases/tag/v0.1.0
