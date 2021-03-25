@@ -164,9 +164,9 @@ location of the configuration file.
 
 ### Environment Variables
 
-| Flag Name     | Environment Variable Name  | Notes | Example (mostly using default values)                              |
-| ------------- | -------------------------- | ----- | ------------------------------------------------------------------ |
-| `config-file` | `QUERY_AUMETA_CONFIG_FILE` |       | `QUERY_AUMETA_CONFIG_FILE="/usr/local/etc/query-meta/config.toml"` |
+| Flag Name     | Environment Variable Name | Notes | Example (mostly using default values)                            |
+| ------------- | ------------------------- | ----- | ---------------------------------------------------------------- |
+| `config-file` | `QUERY_META_CONFIG_FILE`  |       | `QUERY_META_CONFIG_FILE="/usr/local/etc/query-meta/config.toml"` |
 
 ### Configuration File
 
