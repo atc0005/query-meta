@@ -18,9 +18,9 @@ inclusion into the project.
 
 PURPOSE
 
-This repo provides a small CLI tool to query a Microsoft SQL Server (MSSQL)
-database and write out a pipe-delimited CSV file for further processing by
-other tools.
+This repo provides a small CLI tool to query the Meta Microsoft SQL Server
+(MSSQL) database and write out a pipe-delimited CSV file for further
+processing by other tools.
 
 USAGE
 
