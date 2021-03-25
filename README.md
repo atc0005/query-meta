@@ -64,9 +64,9 @@ configuration file.
 
 ## Features
 
-The `qm` CLI app queries a Microsoft SQL Server (MSSQL) database and writes
-out a pipe-delimited CSV file for further processing by other tools in a
-patron records processing pipeline.
+The `qm` CLI app queries the Meta Microsoft SQL Server (MSSQL) database and
+writes out a pipe-delimited CSV file for further processing by other tools in
+a patron records processing pipeline.
 
 ## Status
 
@@ -157,10 +157,10 @@ location of the configuration file.
 
 ### Command-line Arguments
 
-| Option        | Required | Default        | Repeat | Possible               | Description                                                                                                                    |
-| ------------- | -------- | -------------- | ------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `h`, `help`   | No       | `false`        | No     | `h`, `help`            | Show Help text along with the list of supported flags.                                                                         |
-| `config-file` | Yes      | *empty string* | No     | *valid path to a file* | Fully-qualified path to required TOML-formatted configuration file. See contrib/qm/config.example.toml for a starter template. |
+| Option        | Required | Default        | Repeat | Possible               | Description                                                                                                                      |
+| ------------- | -------- | -------------- | ------ | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `h`, `help`   | No       | `false`        | No     | `h`, `help`            | Show Help text along with the list of supported flags.                                                                           |
+| `config-file` | Yes      | *empty string* | No     | *valid path to a file* | Fully-qualified path to required TOML-formatted configuration file. See `contrib/qm/config.example.toml` for a starter template. |
 
 ### Environment Variables
 
@@ -196,11 +196,11 @@ The [`config.example.toml`](config.example.toml) file is intended as a
 starting point for your own configuration file and attempts to illustrate
 working values for the available command-line flags.
 
-Once reviewed and potentially adjusted, your copy of the configuration file
-can be placed wherever you like and can be referred to using the `config-file`
-flag. Though you can name the file whatever you like, it is recommended to
-keep the `toml` file extension to help signal to future sysadmins that they're
-working with a TOML formatted file and not a traditional INI file.
+Once adjusted and copied to a location of your choosing, your copy of the
+configuration file can be referred to using the `config-file` flag. Though you
+can name the file whatever you like, it is recommended to keep the `toml` file
+extension to help signal to future sysadmins that they're working with a TOML
+formatted file and not a traditional INI file.
 
 Suggested filenames:
 
