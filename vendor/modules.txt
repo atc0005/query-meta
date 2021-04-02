@@ -22,7 +22,7 @@ github.com/rs/zerolog/internal/json
 github.com/rs/zerolog/log
 # golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 golang.org/x/crypto/md4
-# golang.org/x/text v0.3.5
+# golang.org/x/text v0.3.6
 ## explicit
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
