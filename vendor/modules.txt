@@ -3,7 +3,7 @@
 github.com/alexflint/go-arg
 # github.com/alexflint/go-scalar v1.0.0
 github.com/alexflint/go-scalar
-# github.com/denisenkom/go-mssqldb v0.0.0-20201104001602-427686ac8ec1
+# github.com/denisenkom/go-mssqldb v0.10.0
 ## explicit
 github.com/denisenkom/go-mssqldb
 github.com/denisenkom/go-mssqldb/internal/cp

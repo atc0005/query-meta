@@ -16,8 +16,6 @@ database.
 
 - [Project home](#project-home)
 - [Overview](#overview)
-- [Limitations](#limitations)
-  - [Builds](#builds)
   - [Output files](#output-files)
 - [Features](#features)
 - [Status](#status)
@@ -46,14 +44,6 @@ Server database. The initial `qm` binary provided by this project is intended
 to replace the existing `query_meta.php` script used to retrieve patron
 records from Meta and write out a pipe-delimited CSV file for further
 processing.
-
-## Limitations
-
-### Builds
-
-Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
-supported at this time. Go 1.15 should be used instead until upstream
-[GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
 ### Output files
 
@@ -86,10 +76,7 @@ have not been tested.
 
 ### Building source code
 
-- Go 1.15
-  - Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is
-    not supported at this time. Go 1.15 should be used instead for building
-    applications from this project's repo.
+- Go 1.15+
 - GCC
   - if building with custom options (as the provided `Makefile` does)
 - `make`
@@ -246,7 +233,6 @@ SOFTWARE.
 ## References
 
 - <https://github.com/denisenkom/go-mssqldb>
-  - (GH-639) [Not implemented panic in go 1.16](https://github.com/denisenkom/go-mssqldb/issues/639)
 - <https://github.com/rs/zerolog>
 - <https://github.com/alexflint/go-arg>
 
