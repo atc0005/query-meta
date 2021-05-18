@@ -216,6 +216,7 @@ func main() {
 			&patronRecord.OtherStatus,
 			&patronRecord.OtherTypeCode,
 			&patronRecord.StudentDegreeEarned,
+			&patronRecord.AllegionID,
 		)
 		if scanErr != nil {
 			cfg.Log.Error().Err(scanErr).Msg("failed to retrieve patron record")

@@ -60,7 +60,8 @@ func (r LibraryPatronRecord) String() string {
 			"StudentType: %v, "+
 			"OtherStatus: %v, "+
 			"OtherTypeCode: %v, "+
-			"StudentDegreeEarned: %v"+
+			"StudentDegreeEarned: %v, "+
+			"AllegionID: %v"+
 			" }",
 		r.GIDStatus.String,
 		r.GID.String,
@@ -102,6 +103,7 @@ func (r LibraryPatronRecord) String() string {
 		r.OtherStatus.String,
 		r.OtherTypeCode.String,
 		r.StudentDegreeEarned.String,
+		r.AllegionID.String,
 	)
 
 }
@@ -269,7 +271,9 @@ func (r *LibraryPatronRecord) padEmpty() {
 	if r.StudentDegreeEarned.Valid && r.StudentDegreeEarned.String == "" {
 		r.StudentDegreeEarned.String = " "
 	}
-
+	if r.AllegionID.Valid && r.AllegionID.String == "" {
+		r.AllegionID.String = " "
+	}
 }
 
 // CSV produces a patron record in a pipe delimited, view_extract.txt file
@@ -291,7 +295,7 @@ func (r LibraryPatronRecord) CSV() string {
 	// field values with a single space.
 	r.padEmpty()
 
-	outputRecordTmpl := "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n"
+	outputRecordTmpl := "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n"
 
 	return fmt.Sprintf(
 		outputRecordTmpl,
@@ -335,6 +339,7 @@ func (r LibraryPatronRecord) CSV() string {
 		r.OtherStatus.String,
 		r.OtherTypeCode.String,
 		r.StudentDegreeEarned.String,
+		r.AllegionID.String,
 	)
 }
 

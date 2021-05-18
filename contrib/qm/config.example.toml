@@ -90,7 +90,8 @@ SELECT
     student_type,
     Other_status,
     Other_type_code,
-    Student_degree_earned
+    Student_degree_earned,
+    aubAllegionID
 FROM
     library_patrons
 WHERE
