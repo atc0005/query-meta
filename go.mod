@@ -12,7 +12,7 @@ go 1.15
 require (
 	github.com/alexflint/go-arg v1.4.2
 	github.com/denisenkom/go-mssqldb v0.10.0
-	github.com/pelletier/go-toml v1.9.1
+	github.com/pelletier/go-toml v1.9.2
 	github.com/rs/zerolog v1.22.0
 	golang.org/x/text v0.3.6
 )
