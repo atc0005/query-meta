@@ -51,4 +51,5 @@ type LibraryPatronRecord struct {
 	OtherStatus               sql.NullString `arg:"-"`
 	OtherTypeCode             sql.NullString `arg:"-"`
 	StudentDegreeEarned       sql.NullString `arg:"-"`
+	NearFieldBadgeID          sql.NullString `arg:"-"`
 }
