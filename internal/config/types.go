@@ -41,56 +41,56 @@ type fileConfig struct {
 	// Host is the database server hosting the database used by this
 	// application. If using encryption, this value should match one of the
 	// Subject Alternate Name (SANs) values listed on the certificate.
-	Host *string `toml:"host"`
+	Host *string `toml:"host" arg:"-"`
 
 	// Port is the TCP port used to connect to the database server. If not
 	// specified, the default port will be used.
-	Port *int `toml:"port"`
+	Port *int `toml:"port" arg:"-"`
 
 	// Instance is the the database server instance name. This may be blank.
-	Instance *string `toml:"instance"`
+	Instance *string `toml:"instance" arg:"-"`
 
 	// Username is the username used to connect to the database server. An
 	// account with read-only access to the database table is sufficient.
-	Username *string `toml:"username"`
+	Username *string `toml:"username" arg:"-"`
 
 	// Password is the plaintext password used to connect to the database
 	// server. An account with read-only access to the database table is
 	// sufficient.
-	Password *string `toml:"password"`
+	Password *string `toml:"password" arg:"-"`
 
 	// EncryptMode specifies whether data sent between client and server is
 	// encrypted. true for yes, false for login packet only and disable for no
 	// encryption.
-	EncryptMode *string `toml:"encrypt_mode"`
+	EncryptMode *string `toml:"encrypt_mode" arg:"-"`
 
 	// TrustCert indicates whether the certificate should be trusted as-is
 	// without validation. WARNING: TLS is susceptible to man-in-the-middle
 	// attacks if enabling this option.
-	TrustCert *bool `toml:"trust_cert"`
+	TrustCert *bool `toml:"trust_cert" arg:"-"`
 
 	// LogLevel is the maximum log level at which messages will be logged. Log
 	// messages below this threshold will be discarded.
-	LogLevel *string `toml:"log_level"`
+	LogLevel *string `toml:"log_level" arg:"-"`
 
 	// DBName is the name of the database which holds patron records.
-	DBName *string `toml:"database_name"`
+	DBName *string `toml:"database_name" arg:"-"`
 
 	// DBTable is the name of the database table or view. Used primarily in
 	// logging output but also for a few other use cases.
-	DBTable *string `toml:"database_table_name"`
+	DBTable *string `toml:"database_table_name" arg:"-"`
 
 	// DBQueryCountAllRecords is the query used to obtain a count of all
 	// patron records.
-	DBQueryCountAllRecords *string `toml:"query_row_count_all_records"`
+	DBQueryCountAllRecords *string `toml:"query_row_count_all_records" arg:"-"`
 
 	// DBQueryCountInactiveRecords is the query used to obtain a count of all
 	// inactive patron records.
-	DBQueryCountInactiveRecords *string `toml:"query_row_count_inactive_records"`
+	DBQueryCountInactiveRecords *string `toml:"query_row_count_inactive_records" arg:"-"`
 
 	// DBQueryRetrieveActivePatronRecords is the query used to obtain all
 	// active patron records (by intentionally excluding inactive records).
-	DBQueryRetrieveActivePatronRecords *string `toml:"query_active_patron_records"`
+	DBQueryRetrieveActivePatronRecords *string `toml:"query_active_patron_records" arg:"-"`
 
 	// FileRuntimeLog *string `toml:"file_runtime_log" arg:"--runtime-log,env:QUERY_META_FILE_RUNTIME_LOG" help:"The fully-qualified path to a runtime or operational messages log file. Error messages are recorded separately."`
 	// FileErrorLog   *string `toml:"file_error_log" arg:"--error-log,env:QUERY_META_FILE_ERROR_LOG" help:"The fully-qualified path to an error log file. Runtime or operational messages are recorded separately."`
