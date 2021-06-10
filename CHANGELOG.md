@@ -26,6 +26,40 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.0] - 2021-06-10
+
+### Overview
+
+- Add tests (flag parsing, config file loading)
+- Add new database field
+- Bug fixes
+- Dependency updates
+- built using Go 1.16.5
+
+### Added
+
+- Add tests
+  - `--config-file` flag parsing
+  - config file parsing
+- Add `NearFieldBadgeID` record field
+
+### Changed
+
+- dependencies
+  - built using `Go 1.16.5`
+    - Windows (x86, x64)
+    - Linux (x86, x64)
+  - `alexflint/go-arg`
+    - `v1.3.0` to `v1.4.2`
+  - `pelletier/go-toml`
+    - `v1.9.0` to `v1.9.2`
+  - `rs/zerolog`
+    - `v1.21.0` to `v1.22.0`
+
+### Fixed
+
+- config file-specific settings exposed as flags
+
 ## [v0.1.1] - 2021-04-15
 
 ### Overview
@@ -72,6 +106,7 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.2.0...HEAD
+[v0.2.0]: https://github.com/atc0005/query-meta/releases/tag/v0.2.0
 [v0.1.1]: https://github.com/atc0005/query-meta/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/atc0005/query-meta/releases/tag/v0.1.0
