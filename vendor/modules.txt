@@ -14,7 +14,7 @@ github.com/golang-sql/civil
 # github.com/pelletier/go-toml v1.9.2
 ## explicit
 github.com/pelletier/go-toml
-# github.com/rs/zerolog v1.22.0
+# github.com/rs/zerolog v1.23.0
 ## explicit
 github.com/rs/zerolog
 github.com/rs/zerolog/internal/cbor
