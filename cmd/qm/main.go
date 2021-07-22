@@ -217,6 +217,15 @@ func main() {
 			&patronRecord.OtherTypeCode,
 			&patronRecord.StudentDegreeEarned,
 			&patronRecord.NearFieldBadgeID,
+			&patronRecord.NearFieldIphoneID,
+			&patronRecord.NearFieldIphoneExp,
+			&patronRecord.NearFieldIphoneLost,
+			&patronRecord.NearFieldIwatchID,
+			&patronRecord.NearFieldIwatchExp,
+			&patronRecord.NearFieldIwatchLost,
+			&patronRecord.NearFieldAndroidID,
+			&patronRecord.NearFieldAndroidExp,
+			&patronRecord.NearFieldAndroidLost,
 		)
 		if scanErr != nil {
 			cfg.Log.Error().Err(scanErr).Msg("failed to retrieve patron record")

@@ -91,7 +91,16 @@ SELECT
     Other_status,
     Other_type_code,
     Student_degree_earned,
-    NearFieldBadgeID
+    NearFieldBadgeID,
+    NearFieldIphoneID,
+    NearFieldIphoneExp,
+    NearFieldIphoneLost,
+    NearFieldIwatchID,
+    NearFieldIwatchExp,
+    NearFieldIwatchLost,
+    NearFieldAndroidID,
+    NearFieldAndroidExp,
+    NearFieldAndroidLost    
 FROM
     library_patrons
 WHERE

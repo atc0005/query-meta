@@ -52,4 +52,13 @@ type LibraryPatronRecord struct {
 	OtherTypeCode             sql.NullString `arg:"-"`
 	StudentDegreeEarned       sql.NullString `arg:"-"`
 	NearFieldBadgeID          sql.NullString `arg:"-"`
+	NearFieldIphoneID         sql.NullString `arg:"-"`
+	NearFieldIphoneExp        sql.NullString `arg:"-"`
+	NearFieldIphoneLost       sql.NullString `arg:"-"`
+	NearFieldIwatchID         sql.NullString `arg:"-"`
+	NearFieldIwatchExp        sql.NullString `arg:"-"`
+	NearFieldIwatchLost       sql.NullString `arg:"-"`
+	NearFieldAndroidID        sql.NullString `arg:"-"`
+	NearFieldAndroidExp       sql.NullString `arg:"-"`
+	NearFieldAndroidLost      sql.NullString `arg:"-"`
 }
