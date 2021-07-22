@@ -61,7 +61,16 @@ func (r LibraryPatronRecord) String() string {
 			"OtherStatus: %v, "+
 			"OtherTypeCode: %v, "+
 			"StudentDegreeEarned: %v, "+
-			"NearFieldBadgeID: %v"+
+			"NearFieldBadgeID: %v, "+
+			"NearFieldIphoneID: %v, "+
+			"NearFieldIphoneExp: %v, "+
+			"NearFieldIphoneLost: %v, "+
+			"NearFieldIwatchID: %v, "+
+			"NearFieldIwatchExp: %v, "+
+			"NearFieldIwatchLost: %v, "+
+			"NearFieldAndroidID: %v, "+
+			"NearFieldAndroidExp: %v, "+
+			"NearFieldAndroidLost: %v"+
 			" }",
 		r.GIDStatus.String,
 		r.GID.String,
@@ -104,6 +113,15 @@ func (r LibraryPatronRecord) String() string {
 		r.OtherTypeCode.String,
 		r.StudentDegreeEarned.String,
 		r.NearFieldBadgeID.String,
+		r.NearFieldIphoneID.String,
+		r.NearFieldIphoneExp.String,
+		r.NearFieldIphoneLost.String,
+		r.NearFieldIwatchID.String,
+		r.NearFieldIwatchExp.String,
+		r.NearFieldIwatchLost.String,
+		r.NearFieldAndroidID.String,
+		r.NearFieldAndroidExp.String,
+		r.NearFieldAndroidLost.String,
 	)
 
 }
@@ -274,6 +292,42 @@ func (r *LibraryPatronRecord) padEmpty() {
 	if r.NearFieldBadgeID.Valid && r.NearFieldBadgeID.String == "" {
 		r.NearFieldBadgeID.String = " "
 	}
+
+	if r.NearFieldIphoneID.Valid && r.NearFieldIphoneID.String == "" {
+		r.NearFieldIphoneID.String = " "
+	}
+
+	if r.NearFieldIphoneExp.Valid && r.NearFieldIphoneExp.String == "" {
+		r.NearFieldIphoneExp.String = " "
+	}
+
+	if r.NearFieldIphoneLost.Valid && r.NearFieldIphoneLost.String == "" {
+		r.NearFieldIphoneLost.String = " "
+	}
+
+	if r.NearFieldIwatchID.Valid && r.NearFieldIwatchID.String == "" {
+		r.NearFieldIwatchID.String = " "
+	}
+
+	if r.NearFieldIwatchExp.Valid && r.NearFieldIwatchExp.String == "" {
+		r.NearFieldIwatchExp.String = " "
+	}
+
+	if r.NearFieldIwatchLost.Valid && r.NearFieldIwatchLost.String == "" {
+		r.NearFieldIwatchLost.String = " "
+	}
+
+	if r.NearFieldAndroidID.Valid && r.NearFieldAndroidID.String == "" {
+		r.NearFieldAndroidID.String = " "
+	}
+
+	if r.NearFieldAndroidExp.Valid && r.NearFieldAndroidExp.String == "" {
+		r.NearFieldAndroidExp.String = " "
+	}
+
+	if r.NearFieldAndroidLost.Valid && r.NearFieldAndroidLost.String == "" {
+		r.NearFieldAndroidLost.String = " "
+	}
 }
 
 // CSV produces a patron record in a pipe delimited, view_extract.txt file
@@ -295,7 +349,7 @@ func (r LibraryPatronRecord) CSV() string {
 	// field values with a single space.
 	r.padEmpty()
 
-	outputRecordTmpl := "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n"
+	outputRecordTmpl := "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n"
 
 	return fmt.Sprintf(
 		outputRecordTmpl,
@@ -340,6 +394,15 @@ func (r LibraryPatronRecord) CSV() string {
 		r.OtherTypeCode.String,
 		r.StudentDegreeEarned.String,
 		r.NearFieldBadgeID.String,
+		r.NearFieldIphoneID.String,
+		r.NearFieldIphoneExp.String,
+		r.NearFieldIphoneLost.String,
+		r.NearFieldIwatchID.String,
+		r.NearFieldIwatchExp.String,
+		r.NearFieldIwatchLost.String,
+		r.NearFieldAndroidID.String,
+		r.NearFieldAndroidExp.String,
+		r.NearFieldAndroidLost.String,
 	)
 }
 
