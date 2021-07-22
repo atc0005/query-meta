@@ -26,6 +26,33 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.0] - 2021-07-22
+
+### Overview
+
+- Add new database fields
+- Dependency update
+- built using Go 1.16.6
+
+### Added
+
+- Add record fields
+  - `NearFieldIphoneID`
+  - `NearFieldIphoneExp`
+  - `NearFieldIphoneLost`
+  - `NearFieldIwatchID`
+  - `NearFieldIwatchExp`
+  - `NearFieldIwatchLost`
+  - `NearFieldAndroidID`
+  - `NearFieldAndroidExp`
+  - `NearFieldAndroidLost`
+
+### Changed
+
+- dependencies
+  - `action/setup-node`
+    - `v2.2.0` to `v2.3.0`
+
 ## [v0.2.1] - 2021-07-16
 
 ### Overview
@@ -133,7 +160,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.0...HEAD
+[v0.3.0]: https://github.com/atc0005/query-meta/releases/tag/v0.3.0
 [v0.2.1]: https://github.com/atc0005/query-meta/releases/tag/v0.2.1
 [v0.2.0]: https://github.com/atc0005/query-meta/releases/tag/v0.2.0
 [v0.1.1]: https://github.com/atc0005/query-meta/releases/tag/v0.1.1
