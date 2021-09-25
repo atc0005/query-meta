@@ -24,6 +24,8 @@ database.
   - [Building source code](#building-source-code)
   - [Running](#running)
 - [Installation](#installation)
+  - [From source](#from-source)
+  - [Using release binaries](#using-release-binaries)
 - [Configuration](#configuration)
   - [Command-line Arguments](#command-line-arguments)
   - [Environment Variables](#environment-variables)
@@ -89,6 +91,8 @@ have not been tested.
 
 ## Installation
 
+### From source
+
 1. [Download][go-docs-download] Go
 1. [Install][go-docs-install] Go
    - NOTE: Pay special attention to the remarks about `$HOME/.profile`
@@ -135,6 +139,11 @@ have not been tested.
      - look in `/tmp/query-meta/release_assets/qm/`
    - if using `go build`
      - look in `/tmp/query-meta/`
+
+### Using release binaries
+
+1. Download the [latest release][repo-url] binary
+1. Deploy where needed (e.g., within the `/usr/local/bin/` path)
 
 ## Configuration
 
