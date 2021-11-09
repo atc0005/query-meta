@@ -26,6 +26,33 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.3] - 2021-11-09
+
+### Overview
+
+- Dependency updates
+- built using Go 1.16.10
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.16.8` to `1.16.10`
+  - `rs/zerolog`
+    - `v1.25.0` to `v1.26.0`
+  - `actions/checkout`
+    - `v2.3.4` to `v2.4.0`
+  - `actions/setup-node`
+    - `v2.4.0` to `v2.4.1`
+
+### Fixed
+
+- (GH-61) False positive `G307: Deferring unsafe method "Close" on type
+  "*os.File" (gosec)` linting error
+
 ## [v0.3.2] - 2021-09-25
 
 ### Overview
@@ -202,7 +229,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.3...HEAD
+[v0.3.3]: https://github.com/atc0005/query-meta/releases/tag/v0.3.3
 [v0.3.2]: https://github.com/atc0005/query-meta/releases/tag/v0.3.2
 [v0.3.1]: https://github.com/atc0005/query-meta/releases/tag/v0.3.1
 [v0.3.0]: https://github.com/atc0005/query-meta/releases/tag/v0.3.0
