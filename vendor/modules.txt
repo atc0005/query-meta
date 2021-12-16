@@ -15,14 +15,13 @@ github.com/golang-sql/civil
 # github.com/pelletier/go-toml v1.9.4
 ## explicit
 github.com/pelletier/go-toml
-# github.com/rs/zerolog v1.26.0
+# github.com/rs/zerolog v1.26.1
 ## explicit
 github.com/rs/zerolog
 github.com/rs/zerolog/internal/cbor
 github.com/rs/zerolog/internal/json
 github.com/rs/zerolog/log
-# golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
-## explicit
+# golang.org/x/crypto v0.0.0-20211215165025-cf75a172585e
 golang.org/x/crypto/md4
 # golang.org/x/text v0.3.7
 ## explicit
