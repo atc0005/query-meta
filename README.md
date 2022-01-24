@@ -62,8 +62,7 @@ a patron records processing pipeline.
 
 ## Status
 
-Beta quality. The shape of the application is still under development, but
-functional parity with the original PHP script has been achieved.
+Stable. Functional parity with the original PHP script has been achieved.
 
 ## Changelog
 
@@ -72,13 +71,18 @@ each release of this application.
 
 ## Requirements
 
-The following is a loose guideline. Other combinations of Go (see below) and
-operating systems for building and running tools from this repo may work, but
-have not been tested.
+The following is a loose guideline. Other combinations of Go and operating
+systems for building and running tools from this repo may work, but have not
+been tested.
 
 ### Building source code
 
-- Go 1.15+
+- Go
+  - see this project's `go.mod` file for *preferred* version
+  - this project tests against [officially supported Go
+    releases][go-supported-releases]
+    - the most recent stable release (aka, "stable")
+    - the prior, but still supported release (aka, "oldstable")
 - GCC
   - if building with custom options (as the provided `Makefile` does)
 - `make`
@@ -86,8 +90,8 @@ have not been tested.
 
 ### Running
 
-- Windows 10 Version 1909+
-- Ubuntu Linux 18.04
+- Windows 10
+- Ubuntu Linux 18.04+
 
 ## Installation
 
@@ -252,5 +256,7 @@ SOFTWARE.
 [go-docs-download]: <https://golang.org/dl>  "Download Go"
 
 [go-docs-install]: <https://golang.org/doc/install>  "Install Go"
+
+[go-supported-releases]: <https://go.dev/doc/devel/release#policy> "Go Release Policy"
 
 <!-- []: PLACEHOLDER "DESCRIPTION_HERE" -->
