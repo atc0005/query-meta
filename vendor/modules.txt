@@ -3,7 +3,7 @@
 github.com/alexflint/go-arg
 # github.com/alexflint/go-scalar v1.0.0
 github.com/alexflint/go-scalar
-# github.com/denisenkom/go-mssqldb v0.11.0
+# github.com/denisenkom/go-mssqldb v0.12.0
 ## explicit
 github.com/denisenkom/go-mssqldb
 github.com/denisenkom/go-mssqldb/internal/cp
@@ -12,6 +12,8 @@ github.com/denisenkom/go-mssqldb/internal/querytext
 github.com/denisenkom/go-mssqldb/msdsn
 # github.com/golang-sql/civil v0.0.0-20190719163853-cb61b32ac6fe
 github.com/golang-sql/civil
+# github.com/golang-sql/sqlexp v0.0.0-20170517235910-f1bb20e5a188
+github.com/golang-sql/sqlexp
 # github.com/pelletier/go-toml v1.9.4
 ## explicit
 github.com/pelletier/go-toml
