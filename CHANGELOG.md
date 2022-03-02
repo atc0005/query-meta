@@ -26,6 +26,38 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.6] - 2021-03-02
+
+### Overview
+
+- Dependency updates
+- CI / linting improvements
+- built using Go 1.17.7
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.17.6` to `1.17.7`
+  - `alexflint/go-arg`
+    - `v1.4.2` to `v1.4.3`
+  - `actions/checkout`
+    - `v2.4.0` to `v3`
+  - `actions/setup-node`
+    - `v2.5.1` to `v3`
+
+- (GH-76) Expand linting GitHub Actions Workflow to include `oldstable`,
+  `unstable` container images
+- (GH-77) Switch Docker image source from Docker Hub to GitHub Container
+  Registry (GHCR)
+
+### Fixed
+
+- (GH-79) var-declaration: should omit type string from declaration (revive)
+
 ## [v0.3.5] - 2021-01-24
 
 ### Overview
@@ -271,7 +303,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.5...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.6...HEAD
+[v0.3.6]: https://github.com/atc0005/query-meta/releases/tag/v0.3.6
 [v0.3.5]: https://github.com/atc0005/query-meta/releases/tag/v0.3.5
 [v0.3.4]: https://github.com/atc0005/query-meta/releases/tag/v0.3.4
 [v0.3.3]: https://github.com/atc0005/query-meta/releases/tag/v0.3.3
