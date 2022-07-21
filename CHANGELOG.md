@@ -26,6 +26,32 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.9] - 2021-07-21
+
+### Overview
+
+- Dependency updates
+- built using Go 1.17.12
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.17.10` to `1.17.12`
+  - `denisenkom/go-mssqldb`
+    - `v0.12.0` to `v0.12.2`
+  - `pelletier/go-toml`
+    - `v2.0.1` to `v2.0.2`
+  - `rs/zerolog`
+    - `v1.26.1` to `v1.27.0`
+
+### Fixed
+
+- (GH-100) Update lintinstall Makefile recipe
+
 ## [v0.3.8] - 2021-05-13
 
 ### Overview
@@ -339,7 +365,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.8...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.9...HEAD
+[v0.3.9]: https://github.com/atc0005/query-meta/releases/tag/v0.3.9
 [v0.3.8]: https://github.com/atc0005/query-meta/releases/tag/v0.3.8
 [v0.3.7]: https://github.com/atc0005/query-meta/releases/tag/v0.3.7
 [v0.3.6]: https://github.com/atc0005/query-meta/releases/tag/v0.3.6
