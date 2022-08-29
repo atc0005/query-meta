@@ -11,7 +11,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 
@@ -54,7 +53,7 @@ func (c *Config) loadConfigFile(configFile string) error {
 // in TOML format into the associated Config struct.
 func (c *Config) ImportConfigFile(fh io.Reader) error {
 
-	configFile, err := ioutil.ReadAll(fh)
+	configFile, err := io.ReadAll(fh)
 	if err != nil {
 		return err
 	}
