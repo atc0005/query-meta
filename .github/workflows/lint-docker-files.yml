@@ -5,7 +5,7 @@
 # Licensed under the MIT License. See LICENSE file in the project root for
 # full license information.
 
-name: Linting
+name: Dockerfiles Linting
 
 # Run builds for Pull Requests (new, updated)
 # `synchronized` seems to equate to pushing new commits to a linked branch
@@ -28,4 +28,5 @@ jobs:
 
       - name: Run hadolint against all Dockerfile files
         run: |
+          hadolint --version
           hadolint dependabot/docker/go/Dockerfile
