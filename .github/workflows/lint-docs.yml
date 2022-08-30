@@ -28,10 +28,12 @@ jobs:
         with:
           node-version: "lts/*"
 
+      # https://github.com/igorshubovych/markdownlint-cli
       - name: Install Markdown linting tools
         run: |
           npm install markdownlint --save-dev
           npm install -g markdownlint-cli
+          echo "markdownlint version: $(markdownlint --version)"
 
       - name: Check out code
         uses: actions/checkout@v3
