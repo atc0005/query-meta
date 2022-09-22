@@ -26,6 +26,30 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.11] - 2021-09-22
+
+### Overview
+
+- Dependency updates
+- GitHub Actions Workflows updates
+- built using Go 1.19.1
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.17.13` to `1.19.1`
+  - `github/codeql-action`
+    - `v2.1.22` to `v2.1.25`
+- (GH-111) Update project to Go 1.19
+- (GH-112) Update Makefile and GitHub Actions Workflows
+- (GH-113) Add CodeQL GitHub Action Workflow
+- (GH-114) Follow-up CI and Makefile tweaks
+- (GH-115) GHAW: Emit markdownlint version before running
+
 ## [v0.3.10] - 2021-07-29
 
 ### Overview
@@ -391,7 +415,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.10...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.11...HEAD
+[v0.3.11]: https://github.com/atc0005/query-meta/releases/tag/v0.3.11
 [v0.3.10]: https://github.com/atc0005/query-meta/releases/tag/v0.3.10
 [v0.3.9]: https://github.com/atc0005/query-meta/releases/tag/v0.3.9
 [v0.3.8]: https://github.com/atc0005/query-meta/releases/tag/v0.3.8
