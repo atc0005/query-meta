@@ -14,7 +14,7 @@ require (
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/pelletier/go-toml/v2 v2.0.5
 	github.com/rs/zerolog v1.28.0
-	golang.org/x/text v0.3.8
+	golang.org/x/text v0.4.0
 )
 
 require (
