@@ -26,6 +26,47 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.12] - 2021-12-08
+
+### Overview
+
+- Dependency updates
+- GitHub Actions Workflows updates
+- built using Go 1.19.4
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.1` to `1.19.4`
+  - `github.com/denisenkom/go-mssqldb`
+    - `0.12.3` to `0.12.4`
+  - `github.com/pelletier/go-toml`
+    - `v2.0.5` to `v2.0.6`
+  - `golang.org/x/text`
+    - `v0.3.7` to `v0.5.0`
+  - `github.com/mattn/go-colorable`
+    - `v0.1.12` to `v0.1.13`
+  - `github.com/mattn/go-isatty`
+    - `v0.0.14` to `v0.0.16`
+  - `golang.org/x/sys`
+    - `v0.0.0-20220722155257-8c9f86f7a55f` to `v0.3.0`
+  - `golang.org/x/crypto`
+    - `v0.0.0-20220622213112-05595931fe9d` to `v0.3.0`
+  - `github.com/alexflint/go-scalar`
+    - `v1.1.0` to `v1.2.0`
+  - `github.com/golang-sql/civil`
+    - `v0.0.0-20190719163853-cb61b32ac6fe` to
+      `v0.0.0-20220223132316-b832511892a9`
+- (GH-122) Refactor GitHub Actions workflows to import logic
+
+### Fixed
+
+- (GH-130) Fix Makefile Go module base path detection
+
 ## [v0.3.11] - 2021-09-22
 
 ### Overview
@@ -415,7 +456,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.11...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.12...HEAD
+[v0.3.12]: https://github.com/atc0005/query-meta/releases/tag/v0.3.12
 [v0.3.11]: https://github.com/atc0005/query-meta/releases/tag/v0.3.11
 [v0.3.10]: https://github.com/atc0005/query-meta/releases/tag/v0.3.10
 [v0.3.9]: https://github.com/atc0005/query-meta/releases/tag/v0.3.9
