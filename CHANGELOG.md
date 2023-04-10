@@ -26,7 +26,7 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
-## [v0.3.12] - 2021-12-08
+## [v0.3.12] - 2022-12-08
 
 ### Overview
 
@@ -67,7 +67,7 @@ The following types of changes will be recorded in this file:
 
 - (GH-130) Fix Makefile Go module base path detection
 
-## [v0.3.11] - 2021-09-22
+## [v0.3.11] - 2022-09-22
 
 ### Overview
 
@@ -91,7 +91,7 @@ The following types of changes will be recorded in this file:
 - (GH-114) Follow-up CI and Makefile tweaks
 - (GH-115) GHAW: Emit markdownlint version before running
 
-## [v0.3.10] - 2021-07-29
+## [v0.3.10] - 2022-07-29
 
 ### Overview
 
@@ -117,7 +117,7 @@ The following types of changes will be recorded in this file:
 - (GH-108) Apply linting fixes for Go 1.19 release
 - (GH-109) Add missing cmd doc file
 
-## [v0.3.9] - 2021-07-21
+## [v0.3.9] - 2022-07-21
 
 ### Overview
 
@@ -143,7 +143,7 @@ The following types of changes will be recorded in this file:
 
 - (GH-100) Update lintinstall Makefile recipe
 
-## [v0.3.8] - 2021-05-13
+## [v0.3.8] - 2022-05-13
 
 ### Overview
 
@@ -161,7 +161,7 @@ The following types of changes will be recorded in this file:
   - `pelletier/go-toml`
     - `v2.0.0` to `v2.0.1`
 
-## [v0.3.7] - 2021-04-28
+## [v0.3.7] - 2022-04-28
 
 ### Overview
 
@@ -179,7 +179,7 @@ The following types of changes will be recorded in this file:
   - `pelletier/go-toml`
     - `v1.9.4` to `v2.0.0`
 
-## [v0.3.6] - 2021-03-02
+## [v0.3.6] - 2022-03-02
 
 ### Overview
 
@@ -211,7 +211,7 @@ The following types of changes will be recorded in this file:
 
 - (GH-79) var-declaration: should omit type string from declaration (revive)
 
-## [v0.3.5] - 2021-01-24
+## [v0.3.5] - 2022-01-24
 
 ### Overview
 
