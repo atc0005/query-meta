@@ -52,16 +52,11 @@ func (c *Config) loadConfigFile(configFile string) error {
 // ImportConfigFile reads from an io.Reader and unmarshals a configuration file
 // in TOML format into the associated Config struct.
 func (c *Config) ImportConfigFile(fh io.Reader) error {
-
 	configFile, err := io.ReadAll(fh)
 	if err != nil {
 		return err
 	}
 
 	// target nested config struct dedicated to TOML config file settings
-	if err := toml.Unmarshal(configFile, &c.fileConfig); err != nil {
-		return err
-	}
-
-	return nil
+	return toml.Unmarshal(configFile, &c.fileConfig)
 }
