@@ -26,6 +26,35 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.0] - 2023-04-11
+
+### Overview
+
+- Add support for generating DEB, RPM packages
+- Build improvements
+- Generated binary changes
+  - filename patterns
+  - compression (~ 66% smaller)
+  - executable metadata
+- built using Go 1.19.8
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Added
+
+- (GH-151) Generate RPM/DEB packages using nFPM
+- (GH-152) Add version details to Windows executables
+
+### Changed
+
+- (GH-150) Switch to semantic versioning (semver) compatible versioning
+  pattern
+- (GH-153) Makefile: Compress binaries & use fixed filenames
+- (GH-154) Makefile: Refresh recipes to add "standard" set, new
+  package-related options
+- (GH-155) Build dev/stable releases using go-ci Docker image
+
 ## [v0.3.13] - 2023-04-11
 
 ### Overview
@@ -502,7 +531,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.13...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/atc0005/query-meta/releases/tag/v0.4.0
 [v0.3.13]: https://github.com/atc0005/query-meta/releases/tag/v0.3.13
 [v0.3.12]: https://github.com/atc0005/query-meta/releases/tag/v0.3.12
 [v0.3.11]: https://github.com/atc0005/query-meta/releases/tag/v0.3.11
