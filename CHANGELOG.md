@@ -26,6 +26,52 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.3.13] - 2023-04-11
+
+### Overview
+
+- Bug fixes
+- Dependency updates
+- GitHub Actions workflow updates
+- built using Go 1.19.8
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Added
+
+- (GH-139) Add Go Module Validation, Dependency Updates jobs
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.4` to `1.19.8`
+    - `github.com/pelletier/go-toml`
+    - `v2.0.6` to `v2.0.7`
+  - `rs/zerolog`
+    - `v1.28.0` to `v1.29.0`
+  - `golang.org/x/text`
+    - `v0.5.0` to `v0.9.0`
+  - `github.com/mattn/go-isatty`
+    - `v0.0.16` to `v0.0.18`
+  - `golang.org/x/sys`
+    - `v0.3.0` to `v0.7.0`
+  - `golang.org/x/text`
+    - `v0.5.0` to `v0.9.0`
+  - `golang.org/x/crypto`
+    - `v0.3.0` to `v0.8.0`
+- CI
+  - (GH-145) Drop `Push Validation` workflow
+  - (GH-146) Rework workflow scheduling
+  - (GH-148) Remove `Push Validation` workflow status badge
+
+### Fixed
+
+- (GH-160) Update vuln analysis GHAW to use on.push hook
+- (GH-166) Fix 'if-return' revive linting error
+- (GH-167) Fix year in 2022 CHANGELOG release entries
+
 ## [v0.3.12] - 2022-12-08
 
 ### Overview
@@ -456,7 +502,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.12...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.3.13...HEAD
+[v0.3.13]: https://github.com/atc0005/query-meta/releases/tag/v0.3.13
 [v0.3.12]: https://github.com/atc0005/query-meta/releases/tag/v0.3.12
 [v0.3.11]: https://github.com/atc0005/query-meta/releases/tag/v0.3.11
 [v0.3.10]: https://github.com/atc0005/query-meta/releases/tag/v0.3.10
