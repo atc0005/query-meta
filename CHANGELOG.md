@@ -80,8 +80,6 @@ The following types of changes will be recorded in this file:
     - `v2.0.6` to `v2.0.7`
   - `rs/zerolog`
     - `v1.28.0` to `v1.29.0`
-  - `golang.org/x/text`
-    - `v0.5.0` to `v0.9.0`
   - `github.com/mattn/go-isatty`
     - `v0.0.16` to `v0.0.18`
   - `golang.org/x/sys`
