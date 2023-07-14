@@ -26,6 +26,38 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.2] - 2023-07-14
+
+### Overview
+
+- RPM package improvements
+- Bug fixes
+- Dependency updates
+- built using Go 1.19.11
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.10` to `1.19.11`
+  - `atc0005/go-ci`
+    - `go-ci-oldstable-build-v0.10.6` to `go-ci-oldstable-build-v0.11.4`
+  - `pelletier/go-toml`
+    - `v2.0.8` to `v2.0.9`
+  - `golang.org/x/crypto`
+    - `v0.10.0` to `v0.11.0`
+  - `golang.org/x/sys`
+    - `v0.9.0` to `v0.10.0`
+  - `golang.org/x/text`
+    - `v0.10.0` to `v0.11.0`
+
+### Fixed
+
+- (GH-196) Remove deploy logic from postinstall scripts
+
 ## [v0.4.1] - 2023-06-14
 
 ### Overview
@@ -569,7 +601,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.1...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.2...HEAD
+[v0.4.2]: https://github.com/atc0005/query-meta/releases/tag/v0.4.2
 [v0.4.1]: https://github.com/atc0005/query-meta/releases/tag/v0.4.1
 [v0.4.0]: https://github.com/atc0005/query-meta/releases/tag/v0.4.0
 [v0.3.13]: https://github.com/atc0005/query-meta/releases/tag/v0.3.13
