@@ -26,6 +26,31 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.3] - 2023-08-18
+
+### Added
+
+- (GH-201) Add initial automated release notes config
+- (GH-203) Add initial automated release build workflow
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.11` to `1.20.7`
+  - `atc0005/go-ci`
+    - `go-ci-oldstable-build-v0.11.4` to `go-ci-oldstable-build-v0.13.4`
+  - `rs/zerolog`
+    - `v1.29.1` to `v1.30.0`
+  - `golang.org/x/crypto`
+    - `v0.11.0` to `v0.12.0`
+  - `golang.org/x/sys`
+    - `v0.10.0` to `v0.11.0`
+  - `golang.org/x/text`
+    - `v0.11.0` to `v0.12.0`
+- (GH-205) Update Dependabot config to monitor both branches
+- (GH-229) Update project to Go 1.20 series
+
 ## [v0.4.2] - 2023-07-14
 
 ### Overview
@@ -601,7 +626,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.2...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.3...HEAD
+[v0.4.3]: https://github.com/atc0005/query-meta/releases/tag/v0.4.3
 [v0.4.2]: https://github.com/atc0005/query-meta/releases/tag/v0.4.2
 [v0.4.1]: https://github.com/atc0005/query-meta/releases/tag/v0.4.1
 [v0.4.0]: https://github.com/atc0005/query-meta/releases/tag/v0.4.0
