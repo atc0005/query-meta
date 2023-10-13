@@ -13,7 +13,7 @@ require (
 	github.com/alexflint/go-arg v1.4.3
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/pelletier/go-toml/v2 v2.1.0
-	github.com/rs/zerolog v1.30.0
+	github.com/rs/zerolog v1.31.0
 	golang.org/x/text v0.13.0
 )
 
