@@ -26,6 +26,19 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.7] - 2024-01-19
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-319) canary: bump golang from 1.20.12 to 1.20.13 in /dependabot/docker/go
+- (GH-321) docker: bump atc0005/go-ci from go-ci-oldstable-build-v0.14.2 to go-ci-oldstable-build-v0.14.3 in /dependabot/docker/builds
+- (GH-309) ghaw: bump github/codeql-action from 2 to 3
+- (GH-307) go.mod: bump github.com/pelletier/go-toml/v2 from 2.1.0 to 2.1.1
+- (GH-316) go.mod: bump golang.org/x/crypto from 0.16.0 to 0.18.0
+- (GH-314) go.mod: bump golang.org/x/sys from 0.15.0 to 0.16.0
+
 ## [v0.4.6] - 2023-12-09
 
 ### Changed
@@ -673,7 +686,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.6...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.7...HEAD
+[v0.4.7]: https://github.com/atc0005/query-meta/releases/tag/v0.4.7
 [v0.4.6]: https://github.com/atc0005/query-meta/releases/tag/v0.4.6
 [v0.4.5]: https://github.com/atc0005/query-meta/releases/tag/v0.4.5
 [v0.4.4]: https://github.com/atc0005/query-meta/releases/tag/v0.4.4
