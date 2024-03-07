@@ -26,6 +26,25 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.9] - 2024-03-07
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-369) Add todo/release label to "Go Runtime" PRs
+- (GH-357) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.15.2 to go-ci-oldstable-build-v0.15.3 in /dependabot/docker/builds
+- (GH-367) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.15.3 to go-ci-oldstable-build-v0.15.4 in /dependabot/docker/builds
+- (GH-354) canary: bump golang from 1.21.6 to 1.21.7 in /dependabot/docker/go
+- (GH-351) docker: bump atc0005/go-ci from go-ci-oldstable-build-v0.15.0 to go-ci-oldstable-build-v0.15.2 in /dependabot/docker/builds
+- (GH-360) Go Dependency: Bump golang.org/x/crypto from 0.19.0 to 0.20.0
+- (GH-364) Go Dependency: Bump golang.org/x/crypto from 0.20.0 to 0.21.0
+- (GH-363) Go Dependency: Bump golang.org/x/sys from 0.17.0 to 0.18.0
+- (GH-365) Go Runtime: Bump golang from 1.21.7 to 1.21.8 in /dependabot/docker/go
+- (GH-356) Update Dependabot PR prefixes (redux)
+- (GH-355) Update Dependabot PR prefixes
+- (GH-353) Update project to Go 1.21 series
+
 ## [v0.4.8] - 2024-02-15
 
 ### Changed
@@ -702,7 +721,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.8...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.9...HEAD
+[v0.4.9]: https://github.com/atc0005/query-meta/releases/tag/v0.4.9
 [v0.4.8]: https://github.com/atc0005/query-meta/releases/tag/v0.4.8
 [v0.4.7]: https://github.com/atc0005/query-meta/releases/tag/v0.4.7
 [v0.4.6]: https://github.com/atc0005/query-meta/releases/tag/v0.4.6
