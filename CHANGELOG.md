@@ -26,6 +26,22 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.10] - 2024-04-11
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-376) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.15.4 to go-ci-oldstable-build-v0.16.0 in /dependabot/docker/builds
+- (GH-378) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.16.0 to go-ci-oldstable-build-v0.16.1 in /dependabot/docker/builds
+- (GH-379) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.16.1 to go-ci-oldstable-build-v0.19.0 in /dependabot/docker/builds
+- (GH-381) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.19.0 to go-ci-oldstable-build-v0.20.0 in /dependabot/docker/builds
+- (GH-385) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.20.0 to go-ci-oldstable-build-v0.20.1 in /dependabot/docker/builds
+- (GH-373) Go Dependency: Bump github.com/pelletier/go-toml/v2 from 2.1.1 to 2.2.0
+- (GH-388) Go Dependency: Bump golang.org/x/crypto from 0.21.0 to 0.22.0
+- (GH-387) Go Dependency: Bump golang.org/x/sys from 0.18.0 to 0.19.0
+- (GH-383) Go Runtime: Bump golang from 1.21.8 to 1.21.9 in /dependabot/docker/go
+
 ## [v0.4.9] - 2024-03-07
 
 ### Changed
@@ -721,7 +737,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.9...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.10...HEAD
+[v0.4.10]: https://github.com/atc0005/query-meta/releases/tag/v0.4.10
 [v0.4.9]: https://github.com/atc0005/query-meta/releases/tag/v0.4.9
 [v0.4.8]: https://github.com/atc0005/query-meta/releases/tag/v0.4.8
 [v0.4.7]: https://github.com/atc0005/query-meta/releases/tag/v0.4.7
