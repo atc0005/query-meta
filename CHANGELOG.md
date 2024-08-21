@@ -26,6 +26,28 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.14] - 2024-08-21
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-460) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.4 to go-ci-oldstable-build-v0.21.5 in /dependabot/docker/builds
+- (GH-464) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.5 to go-ci-oldstable-build-v0.21.6 in /dependabot/docker/builds
+- (GH-465) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.6 to go-ci-oldstable-build-v0.21.7 in /dependabot/docker/builds
+- (GH-476) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.7 to go-ci-oldstable-build-v0.21.8 in /dependabot/docker/builds
+- (GH-484) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.8 to go-ci-oldstable-build-v0.21.9 in /dependabot/docker/builds
+- (GH-474) Go Dependency: Bump golang.org/x/crypto from 0.25.0 to 0.26.0
+- (GH-469) Go Dependency: Bump golang.org/x/sys from 0.22.0 to 0.23.0
+- (GH-479) Go Dependency: Bump golang.org/x/sys from 0.23.0 to 0.24.0
+- (GH-475) Go Dependency: Bump golang.org/x/text from 0.16.0 to 0.17.0
+- (GH-486) Go Runtime: Bump golang from 1.21.12 to 1.22.6 in /dependabot/docker/go
+- (GH-485) Update project to Go 1.22 series
+
+#### Other
+
+- (GH-467) Push `REPO_VERSION` var into containers for builds
+
 ## [v0.4.13] - 2024-07-10
 
 ### Changed
@@ -788,7 +810,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.13...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.14...HEAD
+[v0.4.14]: https://github.com/atc0005/query-meta/releases/tag/v0.4.14
 [v0.4.13]: https://github.com/atc0005/query-meta/releases/tag/v0.4.13
 [v0.4.12]: https://github.com/atc0005/query-meta/releases/tag/v0.4.12
 [v0.4.11]: https://github.com/atc0005/query-meta/releases/tag/v0.4.11
