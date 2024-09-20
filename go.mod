@@ -7,7 +7,7 @@
 
 module github.com/atc0005/query-meta
 
-go 1.20
+go 1.21.0
 
 require (
 	github.com/alexflint/go-arg v1.5.1
