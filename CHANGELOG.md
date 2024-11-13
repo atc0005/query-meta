@@ -26,6 +26,26 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.15] - 2024-11-13
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-503) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.12 to go-ci-oldstable-build-v0.21.13 in /dependabot/docker/builds
+- (GH-528) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.13 to go-ci-oldstable-build-v0.21.15 in /dependabot/docker/builds
+- (GH-502) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.9 to go-ci-oldstable-build-v0.21.12 in /dependabot/docker/builds
+- (GH-507) Go Dependency: Bump github.com/pelletier/go-toml/v2 from 2.2.2 to 2.2.3
+- (GH-498) Go Dependency: Bump golang.org/x/crypto from 0.26.0 to 0.27.0
+- (GH-525) Go Dependency: Bump golang.org/x/crypto from 0.27.0 to 0.29.0
+- (GH-495) Go Dependency: Bump golang.org/x/sys from 0.24.0 to 0.25.0
+- (GH-523) Go Dependency: Bump golang.org/x/sys from 0.25.0 to 0.27.0
+- (GH-494) Go Dependency: Bump golang.org/x/text from 0.17.0 to 0.18.0
+- (GH-524) Go Dependency: Bump golang.org/x/text from 0.18.0 to 0.20.0
+- (GH-500) Go Runtime: Bump golang from 1.22.6 to 1.22.7 in /dependabot/docker/go
+- (GH-519) Go Runtime: Bump golang from 1.22.7 to 1.22.9 in /dependabot/docker/go
+- (GH-506) Update project Go version to 1.21.0
+
 ## [v0.4.14] - 2024-08-21
 
 ### Changed
@@ -810,7 +830,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.14...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.15...HEAD
+[v0.4.15]: https://github.com/atc0005/query-meta/releases/tag/v0.4.15
 [v0.4.14]: https://github.com/atc0005/query-meta/releases/tag/v0.4.14
 [v0.4.13]: https://github.com/atc0005/query-meta/releases/tag/v0.4.13
 [v0.4.12]: https://github.com/atc0005/query-meta/releases/tag/v0.4.12
