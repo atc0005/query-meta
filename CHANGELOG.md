@@ -26,6 +26,27 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.4.16] - 2025-04-15
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-533) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.15 to go-ci-oldstable-build-v0.21.16 in /dependabot/docker/builds
+- (GH-536) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.16 to go-ci-oldstable-build-v0.21.17 in /dependabot/docker/builds
+- (GH-610) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.17 to go-ci-oldstable-build-v0.22.9 in /dependabot/docker/builds
+- (GH-611) Disable Dependabot automatic PR rebasing
+- (GH-556) Go Dependency: Bump github.com/mattn/go-colorable from 0.1.13 to 0.1.14
+- (GH-620) Go Dependency: Bump github.com/pelletier/go-toml/v2 from 2.2.3 to 2.2.4
+- (GH-604) Go Dependency: Bump github.com/rs/zerolog from 1.33.0 to 1.34.0
+- (GH-615) Go Dependency: Bump golang.org/x/crypto from 0.29.0 to 0.37.0
+- (GH-613) Go Dependency: Bump golang.org/x/sys from 0.27.0 to 0.32.0
+- (GH-614) Go Dependency: Bump golang.org/x/text from 0.20.0 to 0.24.0
+- (GH-608) Go Runtime: Bump golang from 1.22.10 to 1.23.8 in /dependabot/docker/go
+- (GH-537) Go Runtime: Bump golang from 1.22.9 to 1.22.10 in /dependabot/docker/go
+- (GH-600) go.mod: update minimum Go version to 1.23.0
+- (GH-585) Update project to Go 1.23 series
+
 ## [v0.4.15] - 2024-11-13
 
 ### Changed
@@ -830,7 +851,8 @@ Due to known issues with the `denisenkom/go-mssqldb` package, Go 1.16 is not
 supported at this time. Go 1.15 should be used instead until upstream
 [GH-639](https://github.com/denisenkom/go-mssqldb/issues/639) is resolved.
 
-[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.15...HEAD
+[Unreleased]: https://github.com/atc0005/query-meta/compare/v0.4.16...HEAD
+[v0.4.16]: https://github.com/atc0005/query-meta/releases/tag/v0.4.16
 [v0.4.15]: https://github.com/atc0005/query-meta/releases/tag/v0.4.15
 [v0.4.14]: https://github.com/atc0005/query-meta/releases/tag/v0.4.14
 [v0.4.13]: https://github.com/atc0005/query-meta/releases/tag/v0.4.13
