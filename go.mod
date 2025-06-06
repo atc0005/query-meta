@@ -14,7 +14,7 @@ require (
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/pelletier/go-toml/v2 v2.2.4
 	github.com/rs/zerolog v1.34.0
-	golang.org/x/text v0.25.0
+	golang.org/x/text v0.26.0
 )
 
 require (
@@ -23,6 +23,6 @@ require (
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	golang.org/x/crypto v0.38.0 // indirect
+	golang.org/x/crypto v0.39.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 )
