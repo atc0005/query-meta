@@ -7,14 +7,14 @@
 
 module github.com/atc0005/query-meta
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/alexflint/go-arg v1.5.1
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/pelletier/go-toml/v2 v2.2.4
 	github.com/rs/zerolog v1.34.0
-	golang.org/x/text v0.25.0
+	golang.org/x/text v0.33.0
 )
 
 require (
